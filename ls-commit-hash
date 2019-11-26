@@ -1,0 +1,4 @@
+#!/bin/bash -eu
+
+echo `git log --reverse --pretty=oneline -$1 | awk '{print substr($1,1,7)}' | tr "\n" " "`
+
